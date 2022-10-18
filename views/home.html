@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pokedex Website">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Publicis Sapient">
+    <title>Pokedex App </title>
+    <link rel="stylesheet" href="../scss/component/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+     <!-- Main title start -->
+    <header> 
+        <h1>Pokedex </h1>
+        <span class="divider"></span>
+       <p>Search for any Pokemon that exists on the planet</p> 
+    </header>
+       <!-- Main title end -->
+
+    <main>   
+         <!-- searchBar and dropdown start -->
+            <div class="filter-section" id="pokesearch">
+                    <div class="wrap">
+                        <span class="search-by">Search by</span>
+                        <div class="search">
+                            <input type="text" class="searchTerm" id="inputChange" placeholder="Name or Number" tabindex="1"/>
+                            <button class="searchButton" id="submitData" tabindex="2">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="filterWrap">
+                        <div class="filter-select">
+                            <span class="search-by">Type</span>
+                            <div id="list1" class="dropdown-check-list" tabindex="3">
+                                <span class="anchor">Select Types</span>
+                                <ul class="items" tabindex="3">
+                                    <li><input type="checkbox" />Normal</li>
+                                    <li><input type="checkbox" />Fighting</li>
+                                    <li><input type="checkbox" />Flying</li>
+                                    <li><input type="checkbox" />Poison</li>
+                                    <li><input type="checkbox" />Ground</li>
+                                    <li><input type="checkbox" />Rock</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                  <!-- searchBar and dropdown end -->
+                
+                  <!-- pokemonlist Card start -->
+            <div class="pokemon-main-container" id="pokemonbaby"></div>
+                <!-- pokemonlist Card end -->
+                
+                   <!-- popup start -->
+                  <div class="popup" id="popup-1">
+                    <div class="overlay"></div>
+                    <div class="content" id="poko"></div>
+                  </div>
+                <!-- popup end -->
+    </main>
+
+    <script type="module" src="../js/home.js"></script>
+    <script src="../js/modal.js"></script>
+   
+    
+</body>
+</html>
